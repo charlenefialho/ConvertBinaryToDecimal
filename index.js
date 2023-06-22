@@ -1,14 +1,12 @@
 const converterButton = document.querySelector("#converterButton");
 const outputDecimalNumber = document.querySelector("#outputDecimalNumber");
 const notBinaryNumber = document.querySelector("#notBinaryNumber");
+const inputBinaryNumber = document.querySelector("#inputBinaryNumber");
 
-converterButton.addEventListener('click', callFunctionConvertBinaryToDecimal);
-
-function callFunctionConvertBinaryToDecimal(){
-    const inputBinaryNumber = document.querySelector("#inputBinaryNumber");
+converterButton.addEventListener('click', function(){
     const inputValue = inputBinaryNumber.value;
     convertBinaryToDecimal(inputValue);
- }
+});
 
 function convertBinaryToDecimal(inputValue){
     const binaryNumberArray = [];
