@@ -1,5 +1,6 @@
 const converterButton = document.querySelector("#converterButton");
 const outputDecimalNumber = document.querySelector("#outputDecimalNumber");
+const notBinaryNumber = document.querySelector("#notBinaryNumber");
 
 converterButton.addEventListener('click', callFunctionConvertBinaryToDecimal);
 
@@ -14,10 +15,18 @@ function convertBinaryToDecimal(inputValue){
     for(let i = 0; i< inputValue.length; i++){
         if(inputValue[i] === '0'){
             binaryNumberArray[i] = 0;
+            notBinaryNumber.innerHTML = ' ';
+            notBinaryNumber.style.color = 'red'
+
         }else if(inputValue[i] === '1'){
             binaryNumberArray[i] = 1;
+            notBinaryNumber.innerHTML = ' ';
+            notBinaryNumber.style.color = 'red'
+            
         }else{
-            console.log("Não é número binário");
+            notBinaryNumber.innerHTML = 'Insira um número binário válido';
+            notBinaryNumber.style.color = 'red'
+           
         }
     }
         let total = 0, i = 0;
