@@ -18,13 +18,11 @@ function convertBinaryToDecimal(inputValue){
             binaryNumberArray[i] = 0;
             isBinaryNumber = true;
             notBinaryNumber.innerHTML = ' ';
-            notBinaryNumber.style.color = 'red'
 
         }else if(inputValue[i] === '1'){
             binaryNumberArray[i] = 1;
             isBinaryNumber = true;
             notBinaryNumber.innerHTML = ' ';
-            notBinaryNumber.style.color = 'red'
 
         }else{
             isBinaryNumber = false;
