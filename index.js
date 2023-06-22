@@ -10,19 +10,19 @@ function callFunctionConvertBinaryToDecimal(){
  }
 
 function convertBinaryToDecimal(inputValue){
-    const newArray = [];
+    const binaryNumberArray = [];
     for(let i = 0; i< inputValue.length; i++){
         if(inputValue[i] === '0'){
-            newArray[i] = 0;
+            binaryNumberArray[i] = 0;
         }else if(inputValue[i] === '1'){
-            newArray[i] = 1;
+            binaryNumberArray[i] = 1;
         }else{
             console.log("Não é número binário");
         }
     }
         let total = 0, i = 0;
-       for(let n = newArray.length; n > 0; n--){
-         total += newArray[i] * Math.pow(2,n - 1);
+       for(let n = binaryNumberArray.length; n > 0; n--){
+         total += binaryNumberArray[i] * Math.pow(2,n - 1);
          i += 1;
        }
        outputDecimalNumber.innerHTML = `Numero Decimal: ${total}`;
