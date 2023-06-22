@@ -22,7 +22,7 @@ function convertBinaryToDecimal(inputValue){
             binaryNumberArray[i] = 1;
             notBinaryNumber.innerHTML = ' ';
             notBinaryNumber.style.color = 'red'
-            
+
         }else{
             notBinaryNumber.innerHTML = 'Insira um número binário válido';
             notBinaryNumber.style.color = 'red'
@@ -34,5 +34,5 @@ function convertBinaryToDecimal(inputValue){
          total += binaryNumberArray[i] * Math.pow(2,n - 1);
          i += 1;
        }
-       outputDecimalNumber.innerHTML = `Numero Decimal: ${total}`;
+       outputDecimalNumber.innerHTML = `Número Decimal: ${total}`;
      }
