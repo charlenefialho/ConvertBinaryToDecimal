@@ -7,21 +7,21 @@ converterButton.addEventListener('click', function(){
     const inputValue = inputBinaryNumber.value;
     if (validateBinaryNumber(inputValue)) {
         const decimalValue = convertBinaryToDecimal(convertBinaryStringToNumber(inputValue));
-        outputDecimalNumber.innerHTML = `${decimalValue}`;
+        outputDecimalNumber.innerText = `${decimalValue}`;
     } else {
-        outputDecimalNumber.innerHTML = '';
+        outputDecimalNumber.innerText = '';
     }
 });
 
 function validateBinaryNumber(inputValue){
     for (let i = 0; i < inputValue.length; i++) {
         if (inputValue[i] !== '0' && inputValue[i] !== '1') {
-            notBinaryNumber.innerHTML = 'Insira um número binário válido';
+            notBinaryNumber.innerText = 'Insira um número binário válido';
             notBinaryNumber.style.color = 'red';
             return false;
         }
     }
-    notBinaryNumber.innerHTML = ' ';
+    notBinaryNumber.innerText = ' ';
     return true;
 }
 
