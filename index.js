@@ -7,9 +7,9 @@ converterButton.addEventListener('click', function(){
     const inputValue = inputBinaryNumber.value;
     if (validateBinaryNumber(inputValue)) {
         const decimalValue = convertBinaryToDecimal(convertBinaryStringToNumber(inputValue));
-        outputDecimalNumber.innerHTML = `Número Decimal: ${decimalValue}`;
+        outputDecimalNumber.innerHTML = `${decimalValue}`;
     } else {
-        outputDecimalNumber.innerHTML = 'Número Decimal: ';
+        outputDecimalNumber.innerHTML = '';
     }
 });
 

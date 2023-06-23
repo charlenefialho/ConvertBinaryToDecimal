@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.mainConversionArea{
+    width: 100%;
+    min-height: 50vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.conversionArea{
+    margin-top: 15vh;
+    padding: 6vh 3vw;
+    border-radius: 6px;
+    
+}
+
+.divConverterInput{
+    width: 100%;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#inputBinaryNumber{
+    margin-top: 4vh;
+}
+
+.divConverterButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#titleDecimalNumber{
+    font-size: 1.5rem;
+}
+
+#outputDecimalNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 5rem;
+}
+
+#converterButton{
+    border-radius: 7px;
+    border: 1px black solid;
+    width: 10vw;
+    height: 5vh;
+}
+
+#converterButton:hover{
+    cursor: pointer;
+}
+
+#titleDecimalNumber{
+    margin-top: 3vh;
+}
+
+
