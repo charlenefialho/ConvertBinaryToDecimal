@@ -1,10 +1,13 @@
 const converterButton = document.querySelector("#converterButton");
 const outputDecimalNumber = document.querySelector("#outputDecimalNumber");
-const notBinaryNumber = document.querySelector("#notBinaryNumber");
+const notBinaryNumber = document.querySelector("#notBinaryNumber");//mudar para error message
 const inputBinaryNumber = document.querySelector("#inputBinaryNumber");
 
+//kebab-case
 converterButton.addEventListener('click', function(){
-    const inputValue = inputBinaryNumber.value;
+    const inputValue = inputBinaryNumber.value;//separar o dom da lógica
+    //input binary
+    //mudar para validate
     if (validateBinaryNumber(inputValue)) {
         const decimalValue = convertBinaryToDecimal(convertBinaryStringToNumber(inputValue));
         outputDecimalNumber.innerText = `${decimalValue}`;
@@ -13,6 +16,7 @@ converterButton.addEventListener('click', function(){
     }
 });
 
+//refatorar mudar nome para validate,simplicar mais
 function validateBinaryNumber(inputValue){
     for (let i = 0; i < inputValue.length; i++) {
         if (inputValue[i] !== '0' && inputValue[i] !== '1') {
@@ -25,6 +29,7 @@ function validateBinaryNumber(inputValue){
     return true;
 }
 
+//mudar nome e usar reduce e simplificar
 function convertBinaryStringToNumber(inputValue){
     const binaryNumberArray = [];
     for(let i = 0; i< inputValue.length; i++){
@@ -39,6 +44,7 @@ function convertBinaryStringToNumber(inputValue){
     return binaryNumberArray;
 }
 
+//usar reduce, mudar nome do n, mudar nome do total , serparar responsabilidade
 function convertBinaryToDecimal(binaryNumber) {
     let total = 0;
     for (let n = binaryNumber.length; n > 0; n--) {
