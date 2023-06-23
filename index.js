@@ -30,12 +30,10 @@ function convertBinaryStringToNumber(inputValue){
     for(let i = 0; i< inputValue.length; i++){
         if(inputValue[i] === '0'){
             binaryNumberArray[i] = 0;
-            notBinaryNumber.innerHTML = ' ';
 
         }else if(inputValue[i] === '1')
         {
             binaryNumberArray[i] = 1;
-            notBinaryNumber.innerHTML = ' ';
         }
     }
     return binaryNumberArray;
