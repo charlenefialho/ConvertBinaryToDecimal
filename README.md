@@ -1,4 +1,4 @@
-<h1 align="center">🔢 CSV to JSON converter!!  </h1>
+<h1 align="center">🔢 Binary to decimal converter!!  </h1>
 
  ### Challenge Description:
 In this challenge you must develop an algorithm that converts a binary number into decimal.You can use Javascript language to resolve. If you want to make a front-end for the application, it will be a differential. 
